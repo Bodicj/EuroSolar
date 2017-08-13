@@ -10,7 +10,7 @@
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
     <script src="libs/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/flexisel-style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
@@ -68,9 +68,9 @@
                     <div class="request_data">
                         <div class="radio_personal_data">
                             <div class="request_radio" id="inputs">
-                                <input name="requests" type="radio" value="private" id="private" checked/>
-                                <input name="requests" type="radio" value="entity" id="entity"/>
-                                <input name="requests" type="radio" value="developer" id="developer"/>
+                                <input class="requests" name="requests" type="radio" value="private" id="private" checked/>
+                                <input class="requests" name="requests" type="radio" value="entity" id="entity"/>
+                                <input class="requests" name="requests" type="radio" value="developer" id="developer"/>
                             </div>
                             <div class="request_radio" id="labels">
                                 <label for="private">Приватна особа</label>
@@ -82,9 +82,14 @@
                                 <input class="request_input" id="Name" type="text" placeholder="Имя" required/>
                                 <input class="request_input"  id="Phone"  type="tel" placeholder="Телефон" required/>
                         </form>
+                        <form class="request_form" id="entity_form">
+                            <input class="request_input" id="Name_entity" type="text" placeholder="Имя" required/>
+                            <input class="request_input"  id="Phone_entity"  type="tel" placeholder="Телефон" required/>
+                            <input class="request_input"  id="Company " type="text"  placeholder="Название компании" />
+                        </form>
                     </div>
                     <p id="manager">Наш менеджер зв'яжеться  з вами в рамках 15 хвилин</p>
-                    <div class="btn" id="btn_request">Отправить Заявку</div>
+                    <button type="submit" class="btn" id="btn_request">Отправить Заявку</button>
                 </div>
             </div>
         </div>
@@ -415,6 +420,7 @@
                 <a href="mailto:uni_rect@univ.kiev.ua">e-mail: uni_rect@univ.kiev.ua</a>
             </div>
         </footer>
+        <script src="js/main.js"></script>
     </div>
 </body>
 </html>

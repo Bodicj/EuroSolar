@@ -217,11 +217,32 @@ header{
     border-radius: 3px;
     width: 123%;
 }
+#entity_form{
+    display: none;
+    margin-top: 35px;
+}
 #Name{
     background-image: url(../img/name-logo.png);
     background-repeat: no-repeat;
     background-position-x: 4%;
     background-position-y: center;
+}
+#Name_entity{
+    background-image: url(../img/name-logo.png);
+    background-repeat: no-repeat;
+    background-position-x: 4%;
+    background-position-y: center;
+    margin-bottom: 14px;
+}
+#Phone_entity{
+    background-image: url(../img/phone-logo.png);
+    background-repeat: no-repeat;
+    background-position-x: 4%;
+    background-position-y: center;
+    margin-bottom: 14px;
+}
+#entity_form input{
+    margin-bottom: 14px;
 }
 #Phone{
     background-image: url(../img/phone-logo.png);
@@ -233,6 +254,7 @@ header{
     width: 47%;
     margin-top: 34px;
     margin-left: 40px;
+    border: none;
 }
 #manager{
     color: #ffcc00;
