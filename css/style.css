@@ -205,6 +205,7 @@ header{
     justify-content: space-around;
     height: 150px;
     margin-top: 24px;
+    width: 51%;
 }
 .request_form input{
     font-size: 14px;
@@ -215,7 +216,7 @@ header{
     color: white;
     border: 1px solid;
     border-radius: 3px;
-    width: 123%;
+    width: 100%;
 }
 #entity_form{
     display: none;
