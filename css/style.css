@@ -493,16 +493,15 @@ header{
     margin-top: 103px;
 }
 .step{
-    margin-left: 20px;
+    margin-left: 2%;
     width: 9%;
     display: flex;
-    position: absolute;
     flex-flow: row;
     justify-content: center;
     align-items: center;
 }
 #call{
-    margin-top: -64px;
+    margin-top: -98px;
     flex-flow: column;
     align-items: flex-start;
 }
@@ -510,22 +509,17 @@ header{
     padding-left: 0;
     padding-top: 10px;
 }
-#transport{
-    margin-left: 12.2%;
-}
-#interface{
-    margin-left: 25.1%;
-    width: 11%;
-}
-#commercial{
-    margin-left: 37.79%;
-}
-#cheklist{
-    margin-left: 50.3%;
+.cover{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 71%;
+    /* margin: 0 31px; */
+    margin-left: 11%;
 }
 #money{
-    margin-left: 57%;
-    margin-top: -94px;
+    margin-top: -173px;
+    width: 12%;
     flex-flow: column;
 }
 #money p{
@@ -622,4 +616,25 @@ footer div {
 }
 .slick-prev {
     left: -10%;
+}
+@media(max-width: 1440px){
+    .new_order{
+        width: 42.635%;
+    }
+}
+@media (max-width: 1400px) {
+    .mail_us {
+        margin-right: 9%;
+    }
+    .phone_us {
+        margin-left: 9%;
+    }
+    .popup-content {
+        width: 133%;
+    }
+}
+@media (max-width: 1024px) {
+    .new_order {
+        width: 59.635%;
+    }
 }
