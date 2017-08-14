@@ -338,6 +338,7 @@ header{
     line-height: 27pt;
     font-weight: 600;
     text-decoration: none;
+    border:none;
 }
 .wiring {
     height: 500px;
@@ -364,9 +365,6 @@ header{
 #line {
     border: 1px solid #ffcc00;
     width: 19%;
-}
-.wiring .btn {
-    padding: 15px 40px;
 }
 .why-we{
     background-color: #3b5998;
@@ -617,9 +615,23 @@ footer div {
 .slick-prev {
     left: -10%;
 }
+
+/*Media Queries*/
 @media(max-width: 1440px){
     .new_order{
         width: 42.635%;
+    }
+    .mail_us {
+        margin-right: 2%;
+    }
+    .phone_us {
+        margin-left: 2%;
+    }
+    .new_order_bgrd {
+        background-position-x: center;
+    }
+    .new_order_bgrd {
+        width: 100% !important;
     }
 }
 @media (max-width: 1400px) {
@@ -637,4 +649,125 @@ footer div {
     .new_order {
         width: 59.635%;
     }
+
+    .visible {
+        left: 40% !important;
+        width: 51.275% !important;
+    }
+}
+@media(max-device-width: 420px){
+    .new_order{
+        width: 162%;
+    }
+}
+
+
+/*Modal Windows*/
+.overlay {
+    background: #000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    opacity: .9;
+}
+.visible {
+    background: #3b5998;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -200px;
+    overflow: hidden;
+    z-index: 2000;
+    width: 26.275%;
+    padding: 0px;
+    margin-left: -13.1325%;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+#close_modal{
+    float: right;
+    text-align: end;
+    font-size: 19px;
+    line-height: 20px;
+    margin: 1.2em;
+    margin-top: 13px;
+    margin-left: 23%;
+    margin-bottom: -20px;
+    border: none;
+    background: transparent;
+    color: #ffcc00;
+}
+#close_modal:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+#win button[type="button"]:hover {
+    cursor: pointer;
+    color: navy;
+}
+#win h3 {
+    text-align: center;
+    color: #555;
+}
+.content_modal {
+    padding: 0 1em;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: WhiteSmoke;
+}
+.modal_one_click{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.modal_one_click input {
+    width: 59%;
+    border-radius: 6px;
+    margin: 20px;
+    color: white;
+    border: 1px solid white;
+    background: #3b5998;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3%;
+    margin-right: 0;
+    padding: 10px;
+}
+.modal_inputs{
+    margin-left: 5%;
+    color: white;
+}
+.modal_inputs label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 700;
+    width: 25%;
+}
+#prod_modal {
+    margin: 40px;
+    margin-top: 15px;
+    border: none;
+}
+#Name_modal{
+    margin-left: 3%;
+    width: 59%;
+    padding: 10px;
+}
+.heading_modal{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 20px 0;
+    margin-left: 18%;
+    margin-top: 5px;
+}
+.heading_modal h1 {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
 }

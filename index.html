@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -38,7 +38,7 @@
                     <img src="img/mail_us.png" alt="mail_us">
                     <a href="mailto:test@gmail.com" class="mail">test@gmail.com</a>
                 </div>
-                <div class="btn feedback_btn">Перезвоните мне</div>
+                <div class="btn feedback_btn" onClick=" $('#service_modal_div').css('display' ,'none');getElementById('win').removeAttribute('style');">Перезвоните мне</div>
             </div>
             <div class="second_layer">
                 <ul class="head_nav">
@@ -89,7 +89,7 @@
                         </form>
                     </div>
                     <p id="manager">Наш менеджер зв'яжеться  з вами в рамках 15 хвилин</p>
-                    <button type="submit" class="btn" id="btn_request">Отправить Заявку</button>
+                    <button type="submit" form="private_form" class="btn" id="btn_request">Отправить Заявку</button>
                 </div>
             </div>
         </div>
@@ -102,8 +102,8 @@
                 <div class="popup">
                     <div class="arrow-up"></div>
                     <div class="popup-content">
-                        <p>Различные виды типов и комплектаций коммутационно-защитного оборудования, соответствие нормам ПУЭ и ПТБ. Безопасность, практичность, удобство в обслуживании. Гарантия 3 года.</p>
-                        <div class="btn">Узнать стоимость</div>
+                        <p class="name_service">Различные виды типов и комплектаций коммутационно-защитного оборудования, соответствие нормам ПУЭ и ПТБ. Безопасность, практичность, удобство в обслуживании. Гарантия 3 года.</p>
+                        <div class="btn" name="Установка силового электрооборудования" onClick="getElementById('win').removeAttribute('style'); getElementById('service_modal').value = event.srcElement.attributes[1].value; ">Узнать стоимость</div>
                     </div>
                 </div>
             </div>
@@ -116,7 +116,7 @@
                     <div class="arrow-up"></div>
                     <div class="popup-content">
                         <p>Различные виды типов и комплектаций коммутационно-защитного оборудования, соответствие нормам ПУЭ и ПТБ. Безопасность, практичность, удобство в обслуживании. Гарантия 3 года.</p>
-                        <div class="btn">Узнать стоимость</div>
+                        <div class="btn"name='Сборка электрический щитов' onClick="getElementById('win').removeAttribute('style'); $('#service_modal_div').css('display' ,'block');getElementById('service_modal').value = event.srcElement.attributes[1].value; ">Узнать стоимость</div>
                     </div>
                 </div>
             </div>
@@ -129,7 +129,7 @@
                     <div class="arrow-up"></div>
                     <div class="popup-content">
                         <p>Различные виды типов и комплектаций коммутационно-защитного оборудования, соответствие нормам ПУЭ и ПТБ. Безопасность, практичность, удобство в обслуживании. Гарантия 3 года.</p>
-                        <div class="btn">Узнать стоимость</div>
+                        <div class="btn" name="Монтаж электрической сети зданий" onClick="getElementById('win').removeAttribute('style'); $('#service_modal_div').css('display' ,'block');getElementById('service_modal').value = event.srcElement.attributes[1].value; ">Узнать стоимость</div>
                     </div>
                 </div>
             </div>
@@ -142,7 +142,7 @@
                     <div class="arrow-up"></div>
                     <div class="popup-content">
                         <p>Различные виды типов и комплектаций коммутационно-защитного оборудования, соответствие нормам ПУЭ и ПТБ. Безопасность, практичность, удобство в обслуживании. Гарантия 3 года.</p>
-                        <div class="btn">Узнать стоимость</div>
+                        <div class="btn" name="Установка систем резервного питания" onClick="getElementById('win').removeAttribute('style'); $('#service_modal_div').css('display' ,'block');getElementById('service_modal').value = event.srcElement.attributes[1].value; "">Узнать стоимость</div>
                     </div>
                 </div>
             </div>
@@ -155,7 +155,7 @@
                     <div class="arrow-up"></div>
                     <div class="popup-content">
                         <p>Различные виды типов и комплектаций коммутационно-защитного оборудования, соответствие нормам ПУЭ и ПТБ. Безопасность, практичность, удобство в обслуживании. Гарантия 3 года.</p>
-                        <div class="btn">Узнать стоимость</div>
+                        <div class="btn" name="Обслуживание электроустановок" onClick="getElementById('win').removeAttribute('style'); $('#service_modal_div').css('display' ,'block');getElementById('service_modal').value = event.srcElement.attributes[1].value; ">Узнать стоимость</div>
                     </div>
                 </div>
             </div>
@@ -164,7 +164,7 @@
             <h2>Электромонтаж</h2>
             <div id="line"></div>
             <p>Это одна из главных частей  ремонтно-строительных работ, без которых никак не обойтись. Специалисты нашей компании обладают высоким профессионализмом по выполнению проектирования электромонтажных работ и электроснабжению различных объектов и справятся с самыми сложными задачами и выполнят электромонтажные работы в квартире, доме, офисе, складских и производственных помещениях. Наша компания ответственно подходит к любому заказу и удовлетворит потребности каждого заказчика.</p>
-            <a class="btn" href="#">Отправить заявку</a>
+            <button class="btn" name="Электромонтаж" onClick="getElementById('win').removeAttribute('style'); $('#service_modal_div').css('display' ,'block');getElementById('service_modal').value = event.srcElement.attributes[1].value; ">Отправить заявку</button>
         </div>
         <div class="why-we">
             Чому Вам потрібні саме ми?
@@ -424,5 +424,38 @@
         </footer>
         <script src="js/main.js"></script>
     </div>
+
+    <!--Modals-->
+
+    <div id="win" style="display:none;">
+        <div class="overlay" onClick="getElementById('win').style.display='none';"></div>
+        <div class="visible">
+            <div class="heading_modal">
+                <h1>Отправить заявку</h1>
+                <button id="close_modal" type="button" onClick="getElementById('win').style.display='none';">X</button>
+            </div>
+                <form id="buy_one_click"class="modal_one_click">
+                <div class="modal_inputs" id="service_modal_div">
+                    <label for="service_modal">Услуга:</label>
+                    <input id="service_modal"  value="" type="text" readonly>
+                </div>
+                <div class="modal_inputs" id="modal_inputs_name">
+                    <label for="Name_modal">Имя/Название компании:</label>
+                    <input id="Name_modal" type="text" required>
+                </div>
+                <div class="modal_inputs">
+                    <label for="Tel_modal">Телефон:</label>
+                    <input id="Tel_modal" type="tel" required>
+                </div>
+                <div class="modal_inputs">
+                    <label for="email_modal">E-mail:</label>
+                    <input id="email_modal" type="email" >
+                </div>
+
+            </form>
+            <button id="prod_modal" class="btn" form="buy_one_click" type="submit">Заказать</button>
+        </div>
+    </div>
+
 </body>
 </html>
