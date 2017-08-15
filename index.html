@@ -11,6 +11,7 @@
     <script src="libs/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
     <script src="js/form.js"></script>
+    <script src="js/form_ajax.js"></script>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/flexisel-style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
@@ -73,9 +74,9 @@
                                 <input class="requests" name="requests" type="radio" value="developer" id="developer"/>
                             </div>
                             <div class="request_radio" id="labels">
-                                <label for="private">Приватна особа</label>
-                                <label for="entity">Юридична особа</label>
-                                <label for="developer">Забудовник</label>
+                                <label id="private_label" for="private">Приватна особа</label>
+                                <label id="entity_label" for="entity">Юридична особа</label>
+                                <label id="developer_label" for="developer">Забудовник</label>
                             </div>
                         </div>
                         <form class="request_form" id="private_form">
@@ -89,7 +90,7 @@
                         </form>
                     </div>
                     <p id="manager">Наш менеджер зв'яжеться  з вами в рамках 15 хвилин</p>
-                    <button type="submit" form="private_form" class="btn" id="btn_request">Отправить Заявку</button>
+                    <button type="submit" class="btn" id="btn_request" onclick="SendForm()">Отправить Заявку</button>
                 </div>
             </div>
         </div>
