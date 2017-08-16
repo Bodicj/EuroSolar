@@ -785,6 +785,10 @@ footer div {
     .header_feedback{
         flex-flow:column !important;
     }
+    .visible {
+        left: 13% !important;
+        width: 100.275% !important;
+    }
     .header_feedback div{
         margin: 10px 0;
     }
