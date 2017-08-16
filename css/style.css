@@ -131,7 +131,7 @@ header{
     background: url("../img/background_order.png");
 }
 .new_order{
-    width: 31.635%;
+    /*width: 31.635%;*/
     height: 441px;
     background-color: #3e5894;
     position: absolute;
@@ -618,9 +618,6 @@ footer div {
 
 /*Media Queries*/
 @media(max-width: 1440px){
-    .new_order{
-        width: 42.635%;
-    }
     .mail_us {
         margin-right: 2%;
     }
@@ -635,32 +632,306 @@ footer div {
     }
 }
 @media (max-width: 1400px) {
-    .mail_us {
-        margin-right: 9%;
-    }
-    .phone_us {
-        margin-left: 9%;
-    }
     .popup-content {
         width: 133%;
     }
 }
 @media (max-width: 1024px) {
-    .new_order {
+    /*.new_order {
         width: 59.635%;
+    }*/
+    .container {
+        width: 1000px;
     }
-
+    .wiring {
+        padding-left: 2%;
+        background-position: 140% 5px;
+    }
+    #money {
+        width: 7%;
+        margin-top: -208px;
+    }
+    .cover {
+        width: 69%;
+        margin-left: 12%;
+        margin-top: -4%;
+    }
+    #call {
+        margin-left: 0;
+        margin-top: -231px;
+    }
+    .steps{
+        background-size: cover;
+    }
     .visible {
         left: 40% !important;
         width: 51.275% !important;
     }
 }
-@media(max-device-width: 420px){
+@media(max-device-width: 1000px){
+    .wiring{
+        background-position: 174% 5px;
+    }
+}
+@media(max-device-width: 1000px){
+    .container {
+        width: 100%;
+    }
+    .wiring{
+        height: 600px;
+    }
+}
+@media (max-device-width: 768px){
     .new_order{
-        width: 162%;
+        margin-left: 6%;
+    }
+    .wiring{
+        background-position: 377% 5px;
+    }
+    .map{
+        height: 163px;
+        background-size: contain;
+    }
+    .second_layer{
+        width: 100%;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .popup-content .btn {
+        font-size: 11px;
+    }
+    .image_step{
+        padding: 21px;
+    }
+    .cover{
+        margin-top: 60px;
+    }
+    .step p {
+        font-size: 11px;
+    }
+    #money{
+        height: 122px;
+        margin-top: -123px;
+    }
+    #call{
+        height: 122px;
+        margin-top: -127px;
+    }
+    #call::after{
+        content: '------------------------';
+        color: white;
+    }
+    .etaps{
+        display: none;
+    }
+    #middle-column{
+        height: 220px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        margin-top: 14px;
+    }
+    #middle-column p {
+        color: white;
+    }
+    .step{
+        justify-content: space-around;
+        width: 94%;
+    }
+    #left-column{
+        width: 25%;
+        display: flex;
+        flex-flow: column;
+        height: 250px;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    #right-column{
+        width: 25%;
+        display: flex;
+        flex-flow: column;
+        height: 250px;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    #money-left{
+        justify-content: space-around;
+        margin-left: -2%;
+    }
+    #money-left .image_step{
+        background: #ffcc00;
+    }
+    #responcive_etaps{
+        display: flex !important;
+        width: 100%;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+    .steps{
+        background: url(../img/yellow-bg.png);
+    }
+    .service{
+        width: 11%;
+    }
+    .left{
+        align-items: flex-start;
+    }
+    .right{
+        align-items: flex-start;
     }
 }
 
+@media (max-device-width: 425px) {
+    .header_feedback{
+        flex-flow:column !important;
+    }
+    .header_feedback div{
+        margin: 10px 0;
+    }
+    .head_nav{
+        width: 100%;
+        padding: 3px;
+    }
+    .nav_element{
+        font-size: 8pt;
+    }
+    .new_order_bgrd {
+        background: none;
+    }
+    .new_order {
+        width: 100% !important;
+        height: 500px;
+        margin-left: 0 !important;
+    }
+    .request_radio input {
+        margin: 24px 0 !important;
+    }
+
+    #btn_request {
+        width: 81%;
+    }
+    .step{
+        width: 114% !important;
+    }
+    .services {
+        margin-top: 100px;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .service{
+        max-height: 106px;
+        overflow: hidden;
+        width: 100%;
+        transition: max-height .3s linear;
+    }
+    .popup {
+        margin-top: 0;
+        width: 73%;
+        position: relative;
+    }
+    .wiring{
+        height:550px !important;
+    }
+    .wiring h2 {
+        font-size: 32px;
+    }
+    #line{
+        width: 95%;
+    }
+    .wiring p {
+        width: 100%;
+    }
+    .why-we-examples{
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .left{
+        width: 70%;
+        margin-bottom: 5px;
+        align-items: flex-start;
+    }
+    .right{
+        width: 70%;
+        margin-top: 0;
+        align-items: flex-start;
+    }
+    #slider{
+        width: 94%;
+        margin: 0 auto;
+    }
+    .partners{
+        width: 94%;
+        margin: 0 auto;
+    }
+    .map{
+        background: url(../img/map.png) -159px no-repeat !important;
+        background: url(../img/map.png) -379px no-repeat !important;
+    }
+    footer{
+        flex-flow: column nowrap;
+        align-items: center;
+
+    }
+    .seo_text{
+        margin: 39px 25px;
+        width: 83%;
+    }
+    .adress{
+        align-items: center;
+    }
+    .contacts{
+        align-items: center;
+    }
+}
+@media(max-device-width: 400px){
+    .head_nav{
+        flex-direction: column;
+    }
+}
+@media (max-device-width: 375px) {
+    .wiring {
+        height: 541px !important;
+    }
+    .wiring h2{
+        font-size:30px;
+    }
+    #call-left {
+        margin-left: -14%;
+    }
+    .content h1 {
+        font-size: 20pt;
+    }
+}
+@media (max-device-width: 320px) {
+    .new_order{
+        height: 644px !important;
+    }
+    .request_data{
+        flex-direction: column;
+    }
+    .radio_personal_data{
+        max-width: 100%;
+    }
+    .request_radio input {
+        margin: 16px 0 !important;
+    }
+    #labels{
+        margin-bottom: 0;
+    }
+    .request_form{
+        width: 85%;
+        margin: 0 auto;
+    }
+    .services{
+        margin-top: 185px;
+    }
+    #manager{
+        margin-top: 15px;
+    }
+    .wiring {
+        height: 580px !important;
+    }
+}
 
 /*Modal Windows*/
 .overlay {
